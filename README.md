@@ -28,9 +28,13 @@ $npm install express
 $npm install body-parser
 ```
 
-Start the app
+Start the nodejs server
 
 `nodejs app.js`
+
+The server when running performs two simple tasks. It hosts the index.html page (that should be adapted if required) as well as serving as a POST endpoint for the XMLHTTP requests being sent from the client-side javascript.
+
+The engine running:
 
 ```{r, engine='bash', count_lines}
 ubuntu@ubuntu:~/skimmer.js$ nodejs app.js
@@ -38,3 +42,5 @@ Skimmer is running on 7002
 Waiting on a visitor...
 192.168.0.109 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36 {"network":"Github"}
 ```
+
+To test the functionality, you can navigate to http://localhost:7002 and check the nodejs app log.
