@@ -37,7 +37,7 @@ Start the nodejs server
 
 The server when running performs two simple tasks. It hosts the index.html page (that should be adapted if required) as well as serving as a POST endpoint for the XMLHTTP requests being sent from the client-side javascript.
 
-The engine running:
+The server running:
 
 ```{r, engine='bash', count_lines}
 ubuntu@ubuntu:~/skimmer.js$ nodejs app.js
