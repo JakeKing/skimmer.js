@@ -3,7 +3,7 @@ A quick weaponization of "Your Social Media Fingerprint' by RobinLinus, adapted 
 
 After doing some research for a presentation on modern Phishing tactics, I came across Social Media Leak by Robin Linus (https://robinlinus.github.io/socialmedia-leak/) and decided to use some of his example code to produce a simple NodeJS / JS payload for recon work.
 
-I highly reccomend you review and understand the vulnerabilities presented in his proof of concept. It is a much better representation of what I have worked on here.
+I highly reccomend you review and understand the vulnerabilities presented in his proof of concept. It provides a much deeper dive into the usage of abusing login redirections and CORS policy standards.
 
 The code in the skimmer.js payload is almost entirely Robins, with some additions in the form of XMLHTTPrequests being used to forward the client-side data to a backend NodeJS server for logging / monitoring.
 
