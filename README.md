@@ -3,9 +3,12 @@ A quick weaponization of "Your Social Media Fingerprint' by RobinLinus, adapted 
 
 After doing some research for a presentation on modern Phishing tactics, I came across Social Media Leak by Robin Linus (https://robinlinus.github.io/socialmedia-leak/) and decided to use some of his example code to produce a simple NodeJS / JS payload for recon work.
 
-This work is adapted from his, with some small additions in the form of XMLHTTPrequests being used to forward the client-side data to a backend NodeJS server for logging / monitoring.
+I highly reccomend you review and understand the vulnerabilities presented in his proof of concept. It is a much better representation of what I have worked on here.
 
-This payload should never be used without permission, and only be used for testing security controls on your OWN systems.
+The code in the skimmer.js payload is almost entirely Robins, with some additions in the form of XMLHTTPrequests being used to forward the client-side data to a backend NodeJS server for logging / monitoring.
+
+Really, this tool is designed to better determine suitable payloads for internal pentest and phishing programs to better understand how to effectively scope targets with well-designed Spear Phishing payloads using SET & other great tools.
+
 
 ## Using Skimmer.js
 
@@ -40,7 +43,15 @@ The engine running:
 ubuntu@ubuntu:~/skimmer.js$ nodejs app.js
 Skimmer is running on 7002
 Waiting on a visitor...
+```
+
+To test the payload, you can navigate to http://localhost:7002 and check the nodejs app log. You will see strings in the following format:
+
+IP Address | UserAgent | {"Network":"Network Name"}
+
+```
 192.168.0.109 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36 {"network":"Github"}
 ```
 
-To test the functionality, you can navigate to http://localhost:7002 and check the nodejs app log.
+## This payload should never be used without permission, and only be used for testing security controls on your OWN systems.
+## Use at your own risk.
