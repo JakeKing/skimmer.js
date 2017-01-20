@@ -133,7 +133,6 @@ leakSocialMediaAccounts = function(callback) {
 var loggedin = [];
 var loggedout = [];
 var counter = platforms.length;
-var victim = "jake.king@live.com.au"
 platforms.forEach(function(network) {
 
       counter--;
